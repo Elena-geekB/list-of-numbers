@@ -1,4 +1,10 @@
-target/
+# Исключаем все файлы в target/
+target/*
+
+# Но отслеживаем саму папку target/
+!target/
+
+# Исключения для других систем (например, IDE и build-среды)
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -27,7 +33,7 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
+/build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
